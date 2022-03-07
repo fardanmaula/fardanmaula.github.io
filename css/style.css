@@ -1,0 +1,226 @@
+/* Font */
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/poppins-regular-webfont.woff2') format('woff2'),
+         url('../font/poppins-regular-webfont.woff') format('woff');
+  }
+  
+  body{
+    font-family: poppins;
+  }
+/* Akhir Font */
+
+/* Pewarnaan */
+    /* Background */
+        /* Background Warna 1 */
+        .bgWarna1Light{
+            background-color: #FFF6ED;
+        }
+
+        .bgWarna1Dark{
+            background-color: #0E0E52;
+        }
+        /* Background Warna 2 */
+        .bgWarna2Light{
+            background-color: #FDCA8C;
+        }
+
+        .bgWarna2Dark{
+            background-color: #0B0B41;
+        }
+        /* Background Warna 3 */
+        .bgWarna3Light{
+            background-color: #915F2D;
+        }
+          
+    /* Akhir Background */
+
+    /* Teks */
+        /* Teks Warna 1 */
+        .teksWarna1Light{
+            color: #915F2D;
+        }
+
+        .teksWarna1Dark{
+            color: #78C0E0;
+        }
+        /* Teks Warna 2 */
+        .teksWarna2Light{
+            color: #FDCA8C;
+        }
+
+        .teksWarna2Dark{
+            color: #dddddd;
+        }
+        /* Teks Warna 3 */
+        .teksWarna3Light{
+            color: #915F2D;
+        }
+
+        .teksWarna3Dark{
+            color: #dddddd;
+        }
+    /* Akhir Teks */
+/* Akhir Pewarnaan */
+
+/* Navigasi */
+    /* Wadah Link */
+    .nav-item{
+        border-radius: 5px;
+    }
+    .nav-itemLight:hover{
+        background-color: #FFF6ED;
+    }
+    .nav-itemDark:hover{
+        background-color: #282866;
+    }
+    /* Link */
+    .linkNavbar{
+        transition: .5s;
+    }
+    .nav-item:hover .linkNavbar{
+        transform: scale(.9);
+        font-weight: bold;
+    }
+    /* Tombol Kontak */
+    .tombolKontak{
+        border: #FFF6ED;
+    }
+    .tombolKontak:hover{
+        background-color: #FFF6ED;
+        color: #d63434;
+        font-weight: bold;
+    }
+/* Akhir Navigasi */
+
+/* Home */
+    /* Men-justify deskripsi diri */
+    .teksJustify{
+        text-align: justify;
+    }
+    .daftarLinkAkun{
+        position: absolute;
+        bottom:30px
+    }
+    .linkAkun{
+        transition: .5s;
+    }
+    .linkAkun:hover{
+        transform: scale(.9);
+    }
+/* Akhir Home */
+
+/* About */
+    /* Resume Edukasi dan Organisasi */
+    .resume-timelineLight:before {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 90%;
+        background: #FDCA8C;
+        left: 6px;
+        top: 4px;
+        position: absolute;
+    }
+    
+    .resume-timelineDark:before {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 90%;
+        background: #0E0E52;
+        left: 6px;
+        top: 4px;
+        position: absolute;
+    }
+        
+    .resume-timeline-itemLight:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -32px;
+        top: 3px;
+        width: 15px;
+        height: 15px;
+        border: 4px solid #FDCA8C;
+        background-color: #FFF6ED;
+        border-radius: 50%;
+    }
+    
+    .resume-timeline-itemDark:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -32px;
+        top: 3px;
+        width: 15px;
+        height: 15px;
+        border: 4px solid #0E0E52;
+        background-color: #78C0E0;
+        border-radius: 50%;
+    }
+        
+    .resume-section-title {
+        font-size: 1.00rem;
+        position: relative;
+        color: #8f8ce0;
+    }
+    
+    .card-headerLight a:hover{
+        color:#FFF6ED;
+        font-weight: bold;
+    }
+    
+    .card-headerDark a:hover{
+        color:#78C0E0;
+        font-weight: bold;
+    }
+        
+    .resume-section-content {
+        color: #915F2D;
+        font-size: 0.7rem;
+    }
+        
+    .resume-timeline {
+        padding-left: 2rem;
+    }
+        
+    .resume-position-time {
+        font-size: 0.9rem;
+        color: #aab4c3;
+    }
+        
+    .resume-position-titleLight {
+        font-size: 1.0rem;
+        color: #915F2D;
+    }
+    
+    .resume-position-titleDark {
+        font-size: 1.0rem;
+        color: #0E0E52;
+    }
+/* Akhir About */
+/* Footer */
+.credit{
+    font-size: 10px;
+}
+/* Akhir Footer */
+/* Toggle Dark Mode */
+#toggleDarkMode{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: 0px;
+  z-index: 9999;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#toggleDarkMode a img{
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#toggleDarkMode:hover{
+  transform: rotate(360deg);
+}
+/* Akhir Toggle Dark Mode */
